@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 0804</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="table" id="tab-1">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Здравствуй, ты хочешь чего-нибудь?</p>
+        </div>
+
+        <div class="table" id="tab-2">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Подожди... Мне кажется...</p>
+        </div>
+
+        <div class="table" id="tab-3">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Сегодня какая-то странная дата?</p>
+        </div>
+
+        <div class="table" id="tab-4">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Мне так жаль.</p>
+        </div>
+
+        <div class="table" id="tab-5">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Я немного опоздал из-за своих постоянных дел...</p>
+        </div>
+
+        <div class="table" id="tab-6">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Но ты всё равно хочешь это увидеть, да?</p>
+        </div>
+
+        <div class="table" id="tab-7">
+            <img src="./cat_and_flowers.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Ладно, но сначала прими от меня эти цветы в качестве извинений за задержку, хорошо?</p>
+        </div>
+
+        <div class="table" id="tab-8">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Кто-то сделал меня котом... Так странно.</p>
+        </div>
+
+        <div class="table" id="tab-9">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Ха-ха, но лежать на облаке очень приятно.</p>
+        </div>
+
+        <div class="table" id="tab-10">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Что-о-о ж... Немного инструктажа: когда я мяукну, появится ЭТО... И тебе нужно будет
+                нажать кнопку на play (run). Она также может не отображаться и выглядеть просто как квадратик, не знаю, с чем это связано.</p> <br>
+                <img src="run.png" alt="" width="70px" height="35px">
+        </div>
+
+        <div class="table" id="tab-11">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Готова? Надеюсь, ещё когда-нибудь встретимся. Итак, любителям графиков посвящается...</p>
+        </div>
+
+        <div class="table" id="tab-12">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">3...</p>
+        </div>
+
+        <div class="table" id="tab-13">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">2...</p>
+        </div>
+
+        <div class="table" id="tab-14">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">1...</p>
+        </div>
+
+        <div class="table" id="tab-15">
+            <img src="./cat.png" alt="" width="357px" height="250px">
+            <p class="cat-text">Мяу.</p>
+        </div>
+
+        <div id="tab-16">
+            <iframe src="https://trinket.io/embed/python3/b042e51756a3" width="640px" height="500" frameborder="0"
+                marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+        </div>
+
+        <button class="next" id="next"><u>>> Дальше >></u></button>
+    </div>
+
+    <script>
+        let currentTab = 1;
+        const totalTabs = 16;
+
+        document.querySelector('.next').addEventListener('click', function () {
+            if (currentTab < totalTabs) {
+                document.getElementById('tab-' + currentTab).style.display = 'none';
+                currentTab++;
+                document.getElementById('tab-' + currentTab).style.display = 'flex';
+
+                if (currentTab == totalTabs){
+                document.getElementById('next').style.display = 'none';
+            }
+            }
+
+            
+        });
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            background-image: url(https://i.pinimg.com/originals/c3/aa/cd/c3aacdb10d1c0d550b7fa08b6d0bddb1.jpg);
+        }
+
+        #happy {
+            scale: 100%;
+        }
+    </style>
+</body>
+
+</html>

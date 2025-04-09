@@ -1,0 +1,46 @@
+#embed_content_python3{
+    max-width: 200px;
+}
+
+body{
+    height: 1600px;
+    overflow-y: hidden;
+}
+
+#tab-2, #tab-3, #tab-4, #tab-5, #tab-6, #tab-7, #tab-8, #tab-9, #tab-10, #tab-11, #tab-12, #tab-13, #tab-14, #tab-15, #tab-16{
+    display: none;
+}
+
+#main{
+    width: 100%;
+    margin: 55% 0 0 24.5%;
+    height: 100%;
+}
+
+.table{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    border: 2px double black;
+    margin-bottom: 20%;
+    scale: 150%;
+}
+
+p{
+    color: white;
+    background-color: black;
+}
+
+.cat-text{
+    margin-right: 0;
+    padding: 1%;
+    width: 30%;
+}
+
+.next{
+    border: 2px double black;
+    padding: 1%;
+    margin: 0% 0 0 71%;
+    scale: 150%;
+    background-color: transparent;
+}
